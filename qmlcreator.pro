@@ -13,6 +13,16 @@ TEMPLATE = app
 CONFIG += mobility
 MOBILITY =
 
+
+QML_IMPORT_PATH = /home/macrobull/workspace/lib-external/qml/_armv7/
+QML_IMPORT_PATH += /home/macrobull/workspace/lib-macrobull/qml/_armv7/
+
+QML_IMPORT_PATH += /home/macrobull/workspace/lib-external/qml/qml-Material/modules/Material/
+QML_IMPORT_PATH += /home/macrobull/workspace/lib-external/qml/jbQuick/Charts/
+QML_IMPORT_PATH += /home/macrobull/workspace/qmlcreator/qml/examples/
+QML_IMPORT_PATH += /home/macrobull/workspace/lib-external/qml/jbQuick/Charts/Chart.js
+
+
 RESOURCES += \
     qmlcreator_resources.qrc
 

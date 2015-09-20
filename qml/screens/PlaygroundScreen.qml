@@ -99,16 +99,16 @@ BlankScreen {
         }
     }
 
-    Component.onCompleted: {
-        var componentUrl = ProjectManager.getFilePath()
-        var playComponent = Qt.createComponent(componentUrl, Component.PreferSynchronous, playgroundScreen)
-        if (playComponent.status === Component.Error)
-        {
-            messages.append(playComponent.errorString())
-        }
-        else
-        {
-            playComponent.createObject(playArea)
-        }
-    }
+	Component.onCompleted: {
+		var componentUrl = ProjectManager.getFilePath()
+		var playComponent = Qt.createComponent(componentUrl, Component.PreferSynchronous, playgroundScreen)
+		if (playComponent.status === Component.Error)
+		{
+			messages.append(playComponent.errorString())
+		}
+		else
+		{
+			playComponent.createObject(playArea)
+		}
+	}
 }
