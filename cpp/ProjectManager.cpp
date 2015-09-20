@@ -201,7 +201,7 @@ void ProjectManager::setFileName(QString fileName)
 
 QString ProjectManager::getFilePath()
 {
-    return "file:///" + baseFolderPath(m_baseFolder) + QDir::separator() + m_projectName + QDir::separator() + m_fileName;
+	return "file://" + baseFolderPath(m_baseFolder) + QDir::separator() + m_projectName + QDir::separator() + m_fileName;
 }
 
 QString ProjectManager::getFileContent()
