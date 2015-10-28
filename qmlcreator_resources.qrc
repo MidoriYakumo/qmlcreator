@@ -276,13 +276,6 @@
         <file>qml/examples/Box2D-wheel/images/wheel.png</file>
         <file>qml/examples/Box2D-wheel/main.qml</file>
         <file>qml/examples/Box2D-wheel/Wall.qml</file>
-        <file>qml/examples/Chart/main.qml</file>
-        <file>qml/examples/Chart/MainForm.ui.qml</file>
-        <file>qml/examples/Chart/NewRad.ui.qml</file>
-        <file>qml/examples/Chart/Param.ui.qml</file>
-        <file>qml/examples/Chart/Plot.ui.qml</file>
-        <file>qml/examples/Chart/QChartGallery.js</file>
-        <file>qml/examples/Chart/qt0.qmlproject</file>
         <file>qml/examples/CommonJS/main.qml</file>
         <file>qml/examples/JsonModel/bush.json</file>
         <file>qml/examples/JsonModel/bush.png</file>
@@ -400,5 +393,41 @@
         <file>qml/examples/Vlc/play.png</file>
         <file>qml/examples/Pdf/main.qml</file>
         <file>qml/examples/QuickPlot/main.qml</file>
+        <file>qml/examples/_UI(Chart)/main.qml</file>
+        <file>qml/examples/_UI(Chart)/MainForm.ui.qml</file>
+        <file>qml/examples/_UI(Chart)/NewRad.ui.qml</file>
+        <file>qml/examples/_UI(Chart)/Param.ui.qml</file>
+        <file>qml/examples/_UI(Chart)/Plot.ui.qml</file>
+        <file>qml/examples/_UI(Chart)/QChartGallery.js</file>
+        <file>qml/examples/_UI(Chart)/qt0.qmlproject</file>
+        <file>qml/examples/Chart.js/main.qml</file>
+        <file>qml/examples/Chart.js/QChartGallery.js</file>
+        <file>qml/examples/Chart.js/QChartGallery.qml</file>
+        <file>qml/examples/Material/images/balloon.jpg</file>
+        <file>qml/examples/Material/images/go-last.color.svg</file>
+        <file>qml/examples/Material/images/list-add.color.svg</file>
+        <file>qml/examples/Material/images/weather-pouring.svg</file>
+        <file>qml/examples/Material/images/weather-sunset.svg</file>
+        <file>qml/examples/Material/BottomSheetDemo.qml</file>
+        <file>qml/examples/Material/ButtonDemo.qml</file>
+        <file>qml/examples/Material/CheckBoxDemo.qml</file>
+        <file>qml/examples/Material/ColorPaletteDemo.qml</file>
+        <file>qml/examples/Material/CustomIconsDemo.qml</file>
+        <file>qml/examples/Material/DatePickerDemo.qml</file>
+        <file>qml/examples/Material/demo.qmlproject</file>
+        <file>qml/examples/Material/DialogDemo.qml</file>
+        <file>qml/examples/Material/FormsDemo.qml</file>
+        <file>qml/examples/Material/IconsDemo.qml</file>
+        <file>qml/examples/Material/ListItemsDemo.qml</file>
+        <file>qml/examples/Material/main.qml</file>
+        <file>qml/examples/Material/PageStackDemo.qml</file>
+        <file>qml/examples/Material/ProgressBarDemo.qml</file>
+        <file>qml/examples/Material/RadioButtonDemo.qml</file>
+        <file>qml/examples/Material/SliderDemo.qml</file>
+        <file>qml/examples/Material/SubPage.qml</file>
+        <file>qml/examples/Material/SwitchDemo.qml</file>
+        <file>qml/examples/Material/TextFieldDemo.qml</file>
+        <file>qml/examples/Material/TimePickerDemo.qml</file>
+        <file>qml/examples/Material/TypographyDemo.qml</file>
     </qresource>
 </RCC>
