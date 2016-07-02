@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.7
 
 Item {
     id: paletteLoader

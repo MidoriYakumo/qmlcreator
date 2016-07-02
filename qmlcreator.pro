@@ -1,11 +1,11 @@
 QT += \
-    core gui qml quick \
-    multimedia sql \
-    network websockets \
-    xml svg \
-    sensors bluetooth nfc \
-    positioning location \
-    3dcore 3drenderer 3dinput 3dquick
+	core gui qml quick \
+	multimedia sql \
+	network websockets \
+	xml svg \
+	sensors bluetooth nfc \
+	positioning location \
+	3dcore 3drender 3dinput 3dquick 3dquickextras
 
 TARGET = qmlcreator
 TEMPLATE = app
@@ -14,64 +14,64 @@ CONFIG += mobility
 MOBILITY =
 
 
-QML_IMPORT_PATH = /home/macrobull/workspace/lib-external/qml/_armv7/
-QML_IMPORT_PATH += /home/macrobull/workspace/lib-macrobull/qml/_armv7/
+QML_IMPORT_PATH = ../lib-external/qml/_armv7/
+QML_IMPORT_PATH += ../lib-macrobull/qml/_armv7/
 
-QML_IMPORT_PATH += /home/macrobull/workspace/lib-external/qml/qml-Material/modules/Material/
-QML_IMPORT_PATH += /home/macrobull/workspace/lib-external/qml/jbQuick/Charts/
-QML_IMPORT_PATH += /home/macrobull/workspace/qmlcreator/qml/examples/
-QML_IMPORT_PATH += /home/macrobull/workspace/lib-external/qml/jbQuick/Charts/Chart.js
+QML_IMPORT_PATH += ../lib-external/qml/qml-Material/modules/Material/
+QML_IMPORT_PATH += ../lib-external/qml/jbQuick/Charts/
+QML_IMPORT_PATH += ./qml/examples/
+QML_IMPORT_PATH += ../lib-external/qml/jbQuick/Charts/Chart.js
 
 
 RESOURCES += \
-    qmlcreator_resources.qrc
+	qmlcreator_resources.qrc
 
 HEADERS += \
-    cpp/ProjectManager.h \
-    cpp/QMLHighlighter.h \
-    cpp/SyntaxHighlighter.h \
-    cpp/MessageHandler.h
+	cpp/ProjectManager.h \
+	cpp/QMLHighlighter.h \
+	cpp/SyntaxHighlighter.h \
+	cpp/MessageHandler.h
 
 SOURCES += \
-    cpp/main.cpp \
-    cpp/ProjectManager.cpp \
-    cpp/QMLHighlighter.cpp \
-    cpp/SyntaxHighlighter.cpp \
-    cpp/MessageHandler.cpp
+	cpp/main.cpp \
+	cpp/ProjectManager.cpp \
+	cpp/QMLHighlighter.cpp \
+	cpp/SyntaxHighlighter.cpp \
+	cpp/MessageHandler.cpp
 
 lupdate_only {
 SOURCES += \
-    qml/components/*.qml \
-    qml/components/dialogs/*.qml \
-    qml/components/palettes/*.qml \
-    qml/modules/*.qml \
-    qml/screens/*.qml \
-    qml/*.qml
+	qml/components/*.qml \
+	qml/components/dialogs/*.qml \
+	qml/components/palettes/*.qml \
+	qml/modules/*.qml \
+	qml/screens/*.qml \
+	qml/*.qml
 }
 
 TRANSLATIONS = resources/translations/qmlcreator_ru.ts
 
 android {
-    OTHER_FILES += platform-specific/android/AndroidManifest.xml
-    ANDROID_PACKAGE_SOURCE_DIR = $$PWD/platform-specific/android
+	OTHER_FILES += platform-specific/android/AndroidManifest.xml
+	ANDROID_PACKAGE_SOURCE_DIR = $$PWD/platform-specific/android
 }
 
 ios {
-    ICON_DATA.files = \
-        $$PWD/platform-specific/ios/Icon.png \
-        $$PWD/platform-specific/ios/Icon@2x.png \
-        $$PWD/platform-specific/ios/Icon-60.png \
-        $$PWD/platform-specific/ios/Icon-60@2x.png \
-        $$PWD/platform-specific/ios/Icon-72.png \
-        $$PWD/platform-specific/ios/Icon-72@2x.png \
-        $$PWD/platform-specific/ios/Icon-76.png \
-        $$PWD/platform-specific/ios/Icon-76@2x.png \
-        $$PWD/platform-specific/ios/Def.png \
-        $$PWD/platform-specific/ios/Def@2x.png \
-        $$PWD/platform-specific/ios/Def-Portrait.png \
-        $$PWD/platform-specific/ios/Def-568h@2x.png
-    QMAKE_BUNDLE_DATA += ICON_DATA
+	ICON_DATA.files = \
+		$$PWD/platform-specific/ios/Icon.png \
+		$$PWD/platform-specific/ios/Icon@2x.png \
+		$$PWD/platform-specific/ios/Icon-60.png \
+		$$PWD/platform-specific/ios/Icon-60@2x.png \
+		$$PWD/platform-specific/ios/Icon-72.png \
+		$$PWD/platform-specific/ios/Icon-72@2x.png \
+		$$PWD/platform-specific/ios/Icon-76.png \
+		$$PWD/platform-specific/ios/Icon-76@2x.png \
+		$$PWD/platform-specific/ios/Def.png \
+		$$PWD/platform-specific/ios/Def@2x.png \
+		$$PWD/platform-specific/ios/Def-Portrait.png \
+		$$PWD/platform-specific/ios/Def-568h@2x.png
+	QMAKE_BUNDLE_DATA += ICON_DATA
 
-    QMAKE_INFO_PLIST = $$PWD/platform-specific/ios/Project-Info.plist
-    OTHER_FILES += $$QMAKE_INFO_PLIST
+	QMAKE_INFO_PLIST = $$PWD/platform-specific/ios/Project-Info.plist
+	OTHER_FILES += $$QMAKE_INFO_PLIST
 }

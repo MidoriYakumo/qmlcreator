@@ -1,4 +1,4 @@
-import QtQuick 2.5
+import QtQuick 2.7
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.2
 import QtGraphicalEffects 1.0

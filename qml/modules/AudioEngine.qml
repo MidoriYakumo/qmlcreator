@@ -17,8 +17,8 @@
 ****************************************************************************/
 
 import QtQml 2.2
-import QtAudioEngine 1.0
+import QtAudioEngine 1.1
 
 QtObject {
-    property string version: "1.0"
+	property string version: "1.1"
 }

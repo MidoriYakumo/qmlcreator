@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.7
 import ProjectManager 1.1
 import SyntaxHighlighter 1.1
 

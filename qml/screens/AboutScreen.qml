@@ -16,53 +16,58 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.7
 import QtQuick.Layouts 1.2
 import "../components"
 
 BlankScreen {
-    id: aboutScreen
+	id: aboutScreen
 
-    CToolBar {
-        id: toolBar
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
+	property string quickVersion:"2.7"
+	property string qtVersion:"5.7"
+	property string builtDate:"2016-07-01"
 
-        CBackButton {
-            anchors.fill: parent
-            text: qsTr("About")
-        }
-    }
+	CToolBar {
+		id: toolBar
+		anchors.left: parent.left
+		anchors.right: parent.right
+		anchors.top: parent.top
 
-    CTextArea {
-        anchors.top: toolBar.bottom
-        anchors.bottom: parent.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
+		CBackButton {
+			anchors.fill: parent
+			text: qsTr("About")
+		}
+	}
 
-        text:  textStyle() +
-               Qt.application.name + " " + Qt.application.version + "<br>
-			   Based on Qt Quick 2.5 (Qt 5.5)<br>
-               Built on Jul 23 2015<br><br>
-               Copyright (C) 2013-2015 <a href=\"https://linkedin.com/in/olegyadrov/\">Oleg Yadrov</a><br>
-               <a class=\"link\" href=\"mailto:wearyinside@gmail.com\">wearyinside@gmail.com</a><br><br>
+	CTextArea {
+		anchors.top: toolBar.bottom
+		anchors.bottom: parent.bottom
+		anchors.left: parent.left
+		anchors.right: parent.right
 
-               QML Creator application is distributed under
-               <a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache Software License, Version 2</a>.<br><br>
+		text:  textStyle() +
+			   Qt.application.name + " " + Qt.application.version + "<br>
+			   Based on Qt Quick " + aboutScreen.quickVersion + " (Qt " + aboutScreen.qtVersion + ")<br>
+			   Built on " + aboutScreen.builtDate + "<br><br>
+			   Copyright (C) 2013-2016 <a href=\"https://linkedin.com/in/olegyadrov/\">Oleg Yadrov</a><br>
+			   <a class=\"link\" href=\"mailto:wearyinside@gmail.com\">wearyinside@gmail.com</a><br><br>
+			   This branch by Midori Yakumo <a class=\"link\" href=\"mailto:macrobull.acg.0@gmail.com\">macrobull.acg.0@gmail.com</a><br><br>
 
-               It's available on
-               <a href=\"https://play.google.com/store/apps/details?id=com.wearyinside.qmlcreator\">Google Play</a>
-               and
-               <a href=\"https://itunes.apple.com/us/app/qml-creator/id944301984\">App Store</a>,
-               the source code is available at <a href=\"https://github.com/wearyinside/qmlcreator\">https://github.com/wearyinside/qmlcreator</a><br><br>
+			   QML Creator application is distributed under
+			   <a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache Software License, Version 2</a>.<br><br>
 
-               You are welcome to support me by donating some bitcoins to
-               <a href=\"https://blockchain.info/address/1weary24fY4PqH542yGEgwZcYksGv7zLB\">1weary24fY4PqH542yGEgwZcYksGv7zLB</a><br><br>
+			   It's available on
+			   <a href=\"https://play.google.com/store/apps/details?id=com.wearyinside.qmlcreator\">Google Play</a>
+			   and
+			   <a href=\"https://itunes.apple.com/us/app/qml-creator/id944301984\">App Store</a>,
+			   the source code is available at <a href=\"https://github.com/wearyinside/qmlcreator\">https://github.com/wearyinside/qmlcreator</a><br><br>
 
-               Unless required by applicable law or agreed to in writing, software distributed under the License
-               is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br><br>
+			   You are welcome to support me by donating some bitcoins to
+			   <a href=\"https://blockchain.info/address/1weary24fY4PqH542yGEgwZcYksGv7zLB\">1weary24fY4PqH542yGEgwZcYksGv7zLB</a><br><br>
 
-               Qt is a registered trademark of The Qt Company Ltd. and/or its subsidiaries."
-    }
+			   Unless required by applicable law or agreed to in writing, software distributed under the License
+			   is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br><br>
+
+			   Qt is a registered trademark of The Qt Company Ltd. and/or its subsidiaries."
+	}
 }
