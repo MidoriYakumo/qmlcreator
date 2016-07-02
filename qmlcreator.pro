@@ -14,13 +14,13 @@ CONFIG += mobility
 MOBILITY =
 
 
-QML_IMPORT_PATH = ../lib-external/qml/_armv7/
-QML_IMPORT_PATH += ../lib-macrobull/qml/_armv7/
+QML_IMPORT_PATH = $$PWD/../lib-external/qml/_armv7/
+QML_IMPORT_PATH += $$PWD/../lib-macrobull/qml/_armv7/
 
-QML_IMPORT_PATH += ../lib-external/qml/qml-Material/modules/Material/
-QML_IMPORT_PATH += ../lib-external/qml/jbQuick/Charts/
-QML_IMPORT_PATH += ./qml/examples/
-QML_IMPORT_PATH += ../lib-external/qml/jbQuick/Charts/Chart.js
+QML_IMPORT_PATH += $$PWD/../lib-external/qml/qml-Material/modules/Material/
+QML_IMPORT_PATH += $$PWD/../lib-external/qml/jbQuick/Charts/
+QML_IMPORT_PATH += $$PWD/qml/examples/
+QML_IMPORT_PATH += $$PWD/../lib-external/qml/jbQuick/Charts/Chart.js
 
 
 RESOURCES += \
