@@ -5,7 +5,8 @@ QT += \
 	xml svg \
 	sensors bluetooth nfc \
 	positioning location \
-	3dcore 3drender 3dinput 3dquick 3dquickextras
+	3dcore 3drender 3dinput 3dquick 3dquickextras \
+	charts quickcontrols2
 
 TARGET = qmlcreator
 TEMPLATE = app
